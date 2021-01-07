@@ -4,7 +4,7 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("original")
 public class JokeServiceImpl implements JokeService{
 	private final ChuckNorrisQuotes chuckNorrisQuotes;
 	/** Added constructor for better efficiency so there is lesser recreation of the object
